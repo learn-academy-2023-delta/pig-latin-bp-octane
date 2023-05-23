@@ -37,6 +37,11 @@ const App = () => {
         return eachWord + "way"
       } 
 
+      //Pseudo Code: Story 1.
+      // 1. Make a conditional so that each word starting index sees if it is a vowel.
+      // 2. If it is a vowel add "way" to the end of the word.
+      // 3. Checks every index of the word with correlation to every index of the vowels.
+
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
 
       else if(eachWord.includes("squ")) {
@@ -45,8 +50,27 @@ const App = () => {
       else if(eachWord.includes("qu")) {
         return eachWord.slice(2) + eachWord.slice(0,2) + "ay"
       }
+      //PseudoCode: Story 2.
+      // 1. Make a conditional of each word to see if it has "squ" or "qu".
+      // 2. Use .includes with what we are looking for.
+      // 3. Return the slice of the word after what we are looking for, add the slice off the beginning, add "ay".
+
+
+      else if(eachWord[0] !== vowelsArray[0] && eachWord.includes("y")) {
+        return eachWord.charAt(2) + eachWord.slice(0, 2) + "ay"
+      }
+      //Pseudo Code:
+      // 1. Make a conditional that states if each word strictly does not have a vowel and has "y" within the word.
+      // 2. return eachWord with .charAt that returns the specific index of that location, add the slice of index 0-1 to the end of the word, added with "y".
+
+
       return eachWord
     })
+
+    //PseudoCode: Story 2.
+    // 1. Make a conditional of each word to see if it has "squ" or "qu".
+    // 2. Use .includes with what we are looking for.
+    // 3. Return the slice of the word after what we are looking for, add the slice off the beginning, add "ay".
       
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
     const translatedWords = translatedWordsArray.join(" ")
