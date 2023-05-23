@@ -38,9 +38,16 @@ const App = () => {
       } 
 
       // ACTION ITEM: this return will be the output of your Pig Latin'd code
+
+      else if(eachWord.includes("squ")) {
+      return eachWord.slice(3) + eachWord.slice(0,3)+ "ay"
+      }
+      else if(eachWord.includes("qu")) {
+        return eachWord.slice(2) + eachWord.slice(0,2) + "ay"
+      }
       return eachWord
     })
-
+      
     // NO MODIFICATION NEEDED: once the code has been modified it gets joined from an array back to a string
     const translatedWords = translatedWordsArray.join(" ")
     console.log("translatedWords:", translatedWords)
