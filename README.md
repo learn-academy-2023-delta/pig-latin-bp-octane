@@ -55,13 +55,7 @@ Oday ouyay eakspay igpay atinlay? If you are scratching your head at that statem
 - Can hit the submit button
 - Can see the words that begin with a vowel translated to Pig Latin and rendered to the page (e.g. appleway)
 
-Pseudo Code Story 1:
-type in a vowel starting word, and add "way" at the end.
 
-// 1. If the first letter of the word is equal to a vowel, add "way".
-//    1a.  arrayOfUserInput - text from user split into an array.
-//    1b. translatedWordsArray - this looks for a vowel in each word and returns the vowel.
-// 2. We want to see the first letter of each word, and if it is a value add way.
 
 
 **Story 2: In order to see English words converted to Pig Latin, as the user of the application, I need to see words that have "qu" in the first syllable translated by moving all the consonant and the "u" to the end and add "ay".**
@@ -74,6 +68,7 @@ type in a vowel starting word, and add "way" at the end.
 - Can hit the submit button
 - Can see the words that have a "qu" in the first syllable translated to Pig Latin and rendered to the page (e.g. ealsquay)
 
+
 **Story 3: In order to see English words converted to Pig Latin, as the user of the application, I need to see words that have no vowels other than "y" translated by moving all the consonant to the end and add "ay".**
 
 **Branch:** y-functionality
@@ -83,6 +78,8 @@ type in a vowel starting word, and add "way" at the end.
 - Can type any word that has no vowels other than "y" in the text input (e.g. fry)
 - Can hit the submit button
 - Can see the words that have no vowels other than "y" translated to Pig Latin and rendered to the page (e.g. yfray)
+
+
 
 **Story 4: In order to see English words converted to Pig Latin, as the user of the application, I need to see words that have one or more consonants translated by moving all the consonant to the end and add "ay".**
 
